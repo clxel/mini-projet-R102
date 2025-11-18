@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body,
+ul,
+ol {
+    font-family: "Inter", Arial;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+/* HEADER */
+header {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid black;
+}
+
+.mw {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.img-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#logo-iut,
+#logo-ut,
+#logo-info {
+    max-width: 6rem;
+    height: auto;
+}
+
+#logo-info {
+    margin-left: auto;
+}
+
+/* HEADER NAV */
+header nav {
+    margin-top: 0.5rem;
+    position: relative;
+}
+
+header nav ul {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+header nav ul li {
+    padding: 0.5rem 1rem;
+    background-color: white;
+}
+
+header nav ul li:hover {
+    background-color: lightgray;
+}
+
+header nav li a,
+.nav-competences>span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: black;
+    text-decoration: none;
+}
+
+.nav-sousliste {
+    display: none;
+}
+
+.nav-competences {
+    position: relative;
+    cursor: pointer;
+}
+
+.nav-competences:hover .nav-sousliste {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+}
+
+.toggle-menu {
+    display: none;
+}
+
+.burger {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+    .burger {
+        display: block;
+    }
+
+    header nav ul {
+        display: none;
+        flex-direction: column;
+    }
+
+    .toggle-menu:checked~ul {
+        display: flex;
+    }
+
+    .nav-sousliste {
+        display: none;
+    }
+
+    .nav-competences:hover .nav-sousliste {
+        display: block;
+    }
+}
+
+/* FOOTER */
+footer {
+    padding: 1rem 0;
+    background-color: black;
+    color: white;
+}
+
+footer a {
+    background-color: black;
+    color: white;
+}
+
+.f-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer nav {
+    display: flex;
+    gap: 2rem;
+}
+
+footer nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.footer-cpright {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
