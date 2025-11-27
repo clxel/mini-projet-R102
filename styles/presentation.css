@@ -1,30 +1,5 @@
-body {
-  margin: 0;
-  padding: 0;
-  background: #fff;
-  color: #000;
-}
-
-header {
-  background-color: red;
-  color: white;
-  padding: 20px;
-}
-
-.header-container {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 15px;
-}
-
-.logo-iut {
-  height: 80px;
-  width: auto;
-  cursor: pointer;
-}
-
-h1, h2 {
+h1,
+h2 {
   margin: 0;
 }
 
@@ -38,7 +13,8 @@ table {
   margin-top: 10px;
 }
 
-th, td {
+th,
+td {
   border: 1px solid #ccc;
   padding: 8px;
   text-align: center;
@@ -47,7 +23,7 @@ th, td {
 hr.decorateur {
   border: none;
   height: 4px;
-  background-color: #B5121B;
+  background-color: #C00000;
   margin: 40px 0;
 }
 
@@ -117,7 +93,8 @@ hr.decorateur {
   border-collapse: collapse;
 }
 
-.tableau-droite th, .tableau-droite td {
+.tableau-droite th,
+.tableau-droite td {
   border: 1px solid #ccc;
   padding: 8px;
   text-align: center;

@@ -1,32 +1,69 @@
 <!DOCTYPE html>
 <html lang="fr">
-	<meta charset="utf-8">
-	<title>Compétence 4 : Gérer des données de l’information</title>
-    <link rel="stylesheet" href="styles/competence.css">
-     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-	
+<meta charset="utf-8">
+<title>Compétence 4 : Gérer des données de l’information</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles/base.css">
+<link rel="stylesheet" href="styles/competence.css">
 
-	</head>
-	<body>
-        <main>
+
+</head>
+
+<body>
+    <header>
+        <div class="mw">
+            <div class="img-container">
+                <img id="logo-iut" src="images/logo_iut_toulouse.png" alt="Logo de l'IUT de Toulouse">
+                <img id="logo-ut" src="images/logo_UT.png" alt="Logo de l'Université de Toulouse">
+                <img id="logo-info" src="images/logo_but_info.png" alt="Logo du BUT informatique">
+            </div>
+
+            <nav>
+
+                <input type="checkbox" id="toggle-menu" class="toggle-menu">
+                <label for="toggle-menu" class="burger">&#9776;</label>
+                <ul>
+                    <li><a href="/"><strong>Accueil</strong></a></li>
+                    <li><a href="/presentation.html"><strong>Présentation du BUT</strong></a></li>
+                    <li class="li-competences">
+                        <span><strong>Compétences &blacktriangledown;</strong></span>
+                        <ul>
+                            <li><a href="/comp1.html"><em>Réaliser un développement d'application</em></a></li>
+                            <li><a href="/comp2.html"><em>Optimiser des applications</em></a></li>
+                            <li><a href="/comp3.html"><em>Administrer des systèmes informatiques communicants
+                                        complexes</em></a>
+                            </li>
+                            <li><a href="/comp4.html"><em>Gérer des données de l'information</em></a></li>
+                            <li><a href="/comp5.html"><em>Conduire un projet</em></a></li>
+                            <li><a href="/comp6.html"><em>Collaborer au sein d'une équipe informatique</em></a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/contact.html"><strong>Contact</strong></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
         <h1>Apprentissage critique de la Competence</h1>
         <div class="container">
-            
+
             <div class="content">
                 <img id="comp" src="images/competence4.png" alt="Competence 4    Image" />
                 <p id="BIG">
-                    – Mettre à jour et interroger une base de données relationnelle (en requêtes directes ou à travers une application)<br>
+                    – Mettre à jour et interroger une base de données relationnelle (en requêtes directes ou à travers
+                    une application)<br>
                     – Visualiser des données<br>
                     – Concevoir une base de données relationnelle à partir d’un cahier des
-charges
+                    charges
 
                 </p>
             </div>
         </div>
         <div class="espace"></div>
-            <h1>Evaluation</h1>
+        <h1>Evaluation</h1>
         <div class="container">
-            
+
             <table>
                 <tr class="Head">
                     <td>Ressource</td>
@@ -43,9 +80,9 @@ charges
             </table>
         </div>
         <div class="espace"></div>
-            <h1>SAE 4 Création BD</h1>
+        <h1>SAE 4 Création BD</h1>
         <div class="container">
-            
+
             <p>
                 En partant d'un besoin exprimé par un client, Il faut
                 étudier puis réaliser une base de données portant sur
@@ -63,7 +100,7 @@ charges
                     <h1>Introduction aux BD</h1>
                 </div>
                 <h3>
-                    –  Mettre à jour et interroger une base de données
+                    – Mettre à jour et interroger une base de données
                     relationnelle (en requêtes directes ou à travers une
                     application)<br>
                     – Concevoir une base de données relationnelle à
@@ -73,23 +110,27 @@ charges
                     <h2>Descriptif détaillé</h2>
                     <p>
 
-                    <strong>Objectif</strong>
-                    L'objectif de cette ressource est l'initiation aux bases de données. Cette ressource permet une première sensibilisation
-                    sur l'importance d'une base de données dans le système d'information de l'entreprise et montre la complexité de la
-                    création d'une base répondant aux besoins et qui soit de bonne qualité.
-                    <strong>Savoir de référence étudiés:</strong>
-                    <a class="saut">
-                    – Approche de la conception des bases de données : modèle conceptuel de données et traduction vers le modèle
-                    relationnel + contrainte simple + redondance
-                    – Algèbre relationnelle
-                    – Base du Structured Query Language (SQL) : langage de manipulation de données, langage de définition de données
-                    – Éléments sur les jeux de tests + jeux de données
-                    – Principes et utilisation d'un système de gestion de bases de données (SGBD)
-                    – Utilisation d'atelier de génie logiciel
-                    – Formulaire et état
-                    – Les différents savoirs de référence pourront être approfondis
-                    </a>
-                </p>
+                        <strong>Objectif</strong>
+                        L'objectif de cette ressource est l'initiation aux bases de données. Cette ressource permet une
+                        première sensibilisation
+                        sur l'importance d'une base de données dans le système d'information de l'entreprise et montre
+                        la complexité de la
+                        création d'une base répondant aux besoins et qui soit de bonne qualité.
+                        <strong>Savoir de référence étudiés:</strong>
+                        <a class="saut">
+                            – Approche de la conception des bases de données : modèle conceptuel de données et
+                            traduction vers le modèle
+                            relationnel + contrainte simple + redondance
+                            – Algèbre relationnelle
+                            – Base du Structured Query Language (SQL) : langage de manipulation de données, langage de
+                            définition de données
+                            – Éléments sur les jeux de tests + jeux de données
+                            – Principes et utilisation d'un système de gestion de bases de données (SGBD)
+                            – Utilisation d'atelier de génie logiciel
+                            – Formulaire et état
+                            – Les différents savoirs de référence pourront être approfondis
+                        </a>
+                    </p>
                 </div>
             </div>
         </div>
@@ -101,7 +142,7 @@ charges
                     <h1>Maths. discrètes</h1>
                 </div>
                 <h3>
-                    
+
                     - Formaliser et mettre en œuvre des outils
                     mathématiques pour l'informatique
                     <br>
@@ -109,28 +150,30 @@ charges
                     relationnelle (en requêtes directes ou à travers une
                     application)
 
-                    
+
                 </h3>
                 <div class="container descriptif saut">
                     <h2>Descriptif détaillé</h2>
                     <p>
 
-                    <strong>Objectif</strong>
-                    L'objectif de cette ressource est de mettre en place les outils mathématiques nécessaires aux bases de l'informatique.
-                    Elle aide à formaliser et mettre en œuvre des outils mathématiques pour l'informatique. Elle accompagne la mise en
-                    place des bases de données en explicitant les structures fondamentales de ces dernières.
+                        <strong>Objectif</strong>
+                        L'objectif de cette ressource est de mettre en place les outils mathématiques nécessaires aux
+                        bases de l'informatique.
+                        Elle aide à formaliser et mettre en œuvre des outils mathématiques pour l'informatique. Elle
+                        accompagne la mise en
+                        place des bases de données en explicitant les structures fondamentales de ces dernières.
 
-                    <strong>Savoir de référence étudiés</strong>
-                    – Logique (prédicats, propositions…)
-                    – Théorie des ensembles
-                    – Algèbre de Boole
-                    – Arithmétique modulaire
-                    – Relations, applications
-
-                
+                        <strong>Savoir de référence étudiés</strong>
+                        – Logique (prédicats, propositions…)
+                        – Théorie des ensembles
+                        – Algèbre de Boole
+                        – Arithmétique modulaire
+                        – Relations, applications
 
 
-                </p>
+
+
+                    </p>
                 </div>
             </div>
         </div>
@@ -142,7 +185,7 @@ charges
                     <h1>Introduction à l’économie durable et numérique</h1>
                 </div>
                 <h3>
-                    
+
                     - Mettre à jour et interroger une base de données
                     relationnelle (en requêtes directes ou à travers une
                     application)<br>
@@ -153,27 +196,78 @@ charges
                     <h2>Descriptif détaillé</h2>
                     <p>
 
-                    <strong>Objectif</strong>
-                    L'objectif de cette ressource est de découvrir l'économie durable et responsable. L'essor des données de l'information
-                    dans la société actuelle amène des nouveaux défis économiques. L'étude de la donnée dans son contexte permet une
-                    meilleure visualisation des données de l'information manipulées au quotidien par l'informaticien. Les fondements de
-                    l'économie représentent un incontournable pour appréhender l'écosystème numérique.
-                    <strong>Savoir de référence étudiés</strong>
-                    – Fondements de l'économie (marchés et dysfonctionnements, acteurs économiques, croissance et déséquilibres
-                    économiques, politique économique, mondialisation)<br>
-                    – Écoconception des services numériques (économie circulaire / numérique responsable, enjeux du développement
-                    durable, régulation et impact du numérique)<br>
-                    – Enjeux économiques des données de l'information (acteurs et modèles de l'économie numérique, marché de la
-                    donnée)<br>
-                    – Les différents savoirs de référence pourront être approfondis
+                        <strong>Objectif</strong>
+                        L'objectif de cette ressource est de découvrir l'économie durable et responsable. L'essor des
+                        données de l'information
+                        dans la société actuelle amène des nouveaux défis économiques. L'étude de la donnée dans son
+                        contexte permet une
+                        meilleure visualisation des données de l'information manipulées au quotidien par
+                        l'informaticien. Les fondements de
+                        l'économie représentent un incontournable pour appréhender l'écosystème numérique.
+                        <strong>Savoir de référence étudiés</strong>
+                        – Fondements de l'économie (marchés et dysfonctionnements, acteurs économiques, croissance et
+                        déséquilibres
+                        économiques, politique économique, mondialisation)<br>
+                        – Écoconception des services numériques (économie circulaire / numérique responsable, enjeux du
+                        développement
+                        durable, régulation et impact du numérique)<br>
+                        – Enjeux économiques des données de l'information (acteurs et modèles de l'économie numérique,
+                        marché de la
+                        donnée)<br>
+                        – Les différents savoirs de référence pourront être approfondis
 
 
-                </p>
+                    </p>
                 </div>
             </div>
         </div>
-        
+
         <a href="#" class="hypertxt">Revenir en haut</a>
-        </main>
-	</body>
+    </main>
+
+    <footer>
+        <div class="mw">
+            <div class="container">
+                <div class="navigation">
+                    <div>
+                        <h3>Général :</h3>
+                        <nav>
+                            <ul>
+                                <li><a href="/">Accueil</a></li>
+                                <li><a href="/presentation.html">Présentation du BUT</a></li>
+                                <li><a href="/contact.html">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div>
+                        <h3>Compétences :</h3>
+                        <nav>
+                            <ul>
+                                <li><a href="/comp1.html"><em>Réaliser un développement d'application</em></a></li>
+                                <li><a href="/comp2.html"><em>Optimiser des applications</em></a></li>
+                                <li><a href="/comp3.html"><em>Administrer des systèmes informatiques communicants
+                                            complexes</em></a></li>
+                                <li><a href="/comp4.html"><em>Gérer des données de l'information</em></a></li>
+                                <li><a href="/comp5.html"><em>Conduire un projet</em></a></li>
+                                <li><a href="/comp6.html"><em>Collaborer au sein d'une équipe informatique</em></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+
+                <span>
+                    <a href="https://www.cnil.fr/fr/reglement-europeen-protection-donnees">
+                        CNIL - RGPD
+                    </a>
+                </span>
+
+                <span>
+                    &copy; 2025 Equipe 5 : <br>
+                    Chady BOUZIDA, Nadal RASOANAIVO, Axel TEULAT, Hugo VU
+                </span>
+            </div>
+        </div>
+    </footer>
+</body>
+
 </html>

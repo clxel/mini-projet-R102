@@ -1,67 +1,146 @@
 <!DOCTYPE html>
 <html lang="fr">
-	<head>
-		<meta charset="utf-8">
-		<title>Contact</title>
-		<link rel="stylesheet" href="styles/contact.css">
-	</head>
 
-	<body>
+<head>
+	<meta charset="utf-8">
+	<title>Contact</title>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styles/base.css">
+	<link rel="stylesheet" href="styles/contact.css">
+</head>
 
-		<main>
+<body>
+	<header>
+		<div class="mw">
+			<div class="img-container">
+				<img id="logo-iut" src="images/logo_iut_toulouse.png" alt="Logo de l'IUT de Toulouse">
+				<img id="logo-ut" src="images/logo_UT.png" alt="Logo de l'Université de Toulouse">
+				<img id="logo-info" src="images/logo_but_info.png" alt="Logo du BUT informatique">
+			</div>
 
-			<h1><strong>Nous contacter</strong></h1>
+			<nav>
 
-			<div class="container">
+				<input type="checkbox" id="toggle-menu" class="toggle-menu">
+				<label for="toggle-menu" class="burger">&#9776;</label>
+				<ul>
+					<li><a href="/"><strong>Accueil</strong></a></li>
+					<li><a href="/presentation.html"><strong>Présentation du BUT</strong></a></li>
+					<li class="li-competences">
+						<span><strong>Compétences &blacktriangledown;</strong></span>
+						<ul>
+							<li><a href="/comp1.html"><em>Réaliser un développement d'application</em></a></li>
+							<li><a href="/comp2.html"><em>Optimiser des applications</em></a></li>
+							<li><a href="/comp3.html"><em>Administrer des systèmes informatiques communicants
+										complexes</em></a>
+							</li>
+							<li><a href="/comp4.html"><em>Gérer des données de l'information</em></a></li>
+							<li><a href="/comp5.html"><em>Conduire un projet</em></a></li>
+							<li><a href="/comp6.html"><em>Collaborer au sein d'une équipe informatique</em></a></li>
+						</ul>
+					</li>
+					<li><a href="/contact.html"><strong>Contact</strong></a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
 
-				<div class="boxe1">
+	<main>
 
-					<form>
+		<h1><strong>Nous contacter</strong></h1>
 
-						<label for="mail">Adresse e-mail</label>
-						<!--j'ai utilisé le type mail pour qu'il nous force a mettre un mail-->
-						<input type="email" id="mail" name="mail" required>
+		<div class="container">
 
-						<label for="nom">Nom</label>
-						<input type="text" id="nom" name="nom" required>
+			<div class="boxe1">
 
-						<label for="prenom">Prénom</label>
-						<input type="text" id="prenom" name="prenom" required>
+				<form>
 
-						<label for="message">Votre message</label>
-						<textarea id="message" name="message" required></textarea>
+					<label for="mail">Adresse e-mail</label>
+					<!--j'ai utilisé le type mail pour qu'il nous force a mettre un mail-->
+					<input type="email" id="mail" name="mail" required>
 
-						<button type="button" class="bouton">Envoyer</button>
+					<label for="nom">Nom</label>
+					<input type="text" id="nom" name="nom" required>
 
-					</form>
+					<label for="prenom">Prénom</label>
+					<input type="text" id="prenom" name="prenom" required>
 
-				</div>
+					<label for="message">Votre message</label>
+					<textarea id="message" name="message" required></textarea>
 
-				
-				<div class="boxe2">
+					<button type="button" class="bouton">Envoyer</button>
 
-					<img src="images/Photo_IUT.png" alt="Photo de l'IUT" class="img1">
-
-					<div class="adresse">
-						<p><strong>IUT Paul Sabatier</strong>
-							Département Informatique
-							133 B, Avenue de Rangueil
-							BP 67701
-							31077 TOULOUSE cedex 4
-
-							E-mail : contact.info@iut-tlse3.fr
-							Tél. : 05 62 25 87 61 / 05 62 25 87 64
-						</p>
-					</div>
-
-					<img src="images/LOC_IUT.png" alt="Carte de localisation de l'IUT" class="img2">
-
-				</div>
+				</form>
 
 			</div>
 
-		</main>
 
-	</body>
+			<div class="boxe2">
+
+				<img src="images/Photo_IUT.png" alt="Photo de l'IUT" class="img1">
+
+				<div class="adresse">
+					<p><strong>IUT Paul Sabatier</strong>
+						Département Informatique
+						133 B, Avenue de Rangueil
+						BP 67701
+						31077 TOULOUSE cedex 4
+
+						E-mail : contact.info@iut-tlse3.fr
+						Tél. : 05 62 25 87 61 / 05 62 25 87 64
+					</p>
+				</div>
+
+				<img src="images/LOC_IUT.png" alt="Carte de localisation de l'IUT" class="img2">
+
+			</div>
+
+		</div>
+
+	</main>
+
+	<footer>
+		<div class="mw">
+			<div class="container">
+				<div class="navigation">
+					<div>
+						<h3>Général :</h3>
+						<nav>
+							<ul>
+								<li><a href="/">Accueil</a></li>
+								<li><a href="/presentation.html">Présentation du BUT</a></li>
+								<li><a href="/contact.html">Contact</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div>
+						<h3>Compétences :</h3>
+						<nav>
+							<ul>
+								<li><a href="/comp1.html"><em>Réaliser un développement d'application</em></a></li>
+								<li><a href="/comp2.html"><em>Optimiser des applications</em></a></li>
+								<li><a href="/comp3.html"><em>Administrer des systèmes informatiques communicants
+											complexes</em></a></li>
+								<li><a href="/comp4.html"><em>Gérer des données de l'information</em></a></li>
+								<li><a href="/comp5.html"><em>Conduire un projet</em></a></li>
+								<li><a href="/comp6.html"><em>Collaborer au sein d'une équipe informatique</em></a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+
+				<span>
+					<a href="https://www.cnil.fr/fr/reglement-europeen-protection-donnees">
+						CNIL - RGPD
+					</a>
+				</span>
+
+				<span>
+					&copy; 2025 Equipe 5 : <br>
+					Chady BOUZIDA, Nadal RASOANAIVO, Axel TEULAT, Hugo VU
+				</span>
+			</div>
+		</div>
+	</footer>
+</body>
 
 </html>

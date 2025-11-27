@@ -1,177 +1,353 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8">
   <title>Présentation du BUT Informatique</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/base.css">
   <link rel="stylesheet" href="styles/presentation.css">
 </head>
+
 <body>
 
-<!-- Conteneur du header avec logo et titre -->
-<header>
-  <div class="header-container">
-    <a href="index.html" target="_blank">
-      <img src="images/logo-iut.jpg" alt="Logo IUT" class="logo-iut">
-    </a>
-    <h1>Présentation du BUT Informatique</h1>
-  </div>
-</header>
+  <!-- Conteneur du header avec logo et titre -->
+  <header>
+    <div class="mw">
+      <div class="img-container">
+        <img id="logo-iut" src="images/logo_iut_toulouse.png" alt="Logo de l'IUT de Toulouse">
+        <img id="logo-ut" src="images/logo_UT.png" alt="Logo de l'Université de Toulouse">
+        <img id="logo-info" src="images/logo_but_info.png" alt="Logo du BUT informatique">
+      </div>
 
-<!-- Section d’introduction -->
+      <nav>
+
+        <input type="checkbox" id="toggle-menu" class="toggle-menu">
+        <label for="toggle-menu" class="burger">&#9776;</label>
+        <ul>
+          <li><a href="/"><strong>Accueil</strong></a></li>
+          <li><a href="/presentation.html"><strong>Présentation du BUT</strong></a></li>
+          <li class="li-competences">
+            <span><strong>Compétences &blacktriangledown;</strong></span>
+            <ul>
+              <li><a href="/comp1.html"><em>Réaliser un développement d'application</em></a></li>
+              <li><a href="/comp2.html"><em>Optimiser des applications</em></a></li>
+              <li><a href="/comp3.html"><em>Administrer des systèmes informatiques communicants
+                    complexes</em></a>
+              </li>
+              <li><a href="/comp4.html"><em>Gérer des données de l'information</em></a></li>
+              <li><a href="/comp5.html"><em>Conduire un projet</em></a></li>
+              <li><a href="/comp6.html"><em>Collaborer au sein d'une équipe informatique</em></a></li>
+            </ul>
+          </li>
+          <li><a href="/contact.html"><strong>Contact</strong></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Section d’introduction -->
   <section class="intro">
     <p>Le BUT Informatique est structuré autour de 6 compétences clés et 12 ressources.</p>
   </section>
 
-<!-- Section tableau des coefficients -->
-<section class="tableau-coeff">
-  <div class="conteneur-flex">
-    <div class="texte-gauche">
-      <h2>Validation du semestre</h2>
-      <p>Ce tableau présente les coefficients des ressources du semestre 1 pour chaque compétence du BUT Informatique. Il permet
-         de visualiser l’importance de chaque ressource dans la formation. Pour valider le semestre, il vous faut au minimum avoir 4
-         compétences au dessus de 10 et aucune compétence inférieur à 8. Par exemple si la compétence 1, 3, 5 et 6 sont
-         supérieures ou égales à 10 et que la compétence 2 et 4 sont supérieures à 8, vous validez votre semestre !
-      <br>Voici le fichier PowerPoint disponible sur moodle pour en savoir plus de détail : <a href="https://moodle.iut-tlse3.fr/pluginfile.php/741062/mod_resource/content/2/R%C3%A8gles_passage_BUT_24-25_Complet_BUT1.pptx">fichier PowerPoint</a>
-      </p>
-      <p>Vous pouvez retrouver le fichier Excel sur moodle pour calculer la totalité de vos notes : <a href="https://moodle.iut-tlse3.fr/pluginfile.php/741062/mod_resource/intro/Calcul_Notes_BUT_Info_etu_24-25.xlsx">fichier Excel</a></p>
-    </div>
+  <!-- Section tableau des coefficients -->
+  <section class="tableau-coeff">
+    <div class="conteneur-flex">
+      <div class="texte-gauche">
+        <h2>Validation du semestre</h2>
+        <p>Ce tableau présente les coefficients des ressources du semestre 1 pour chaque compétence du BUT Informatique.
+          Il permet
+          de visualiser l’importance de chaque ressource dans la formation. Pour valider le semestre, il vous faut au
+          minimum avoir 4
+          compétences au dessus de 10 et aucune compétence inférieur à 8. Par exemple si la compétence 1, 3, 5 et 6 sont
+          supérieures ou égales à 10 et que la compétence 2 et 4 sont supérieures à 8, vous validez votre semestre !
+          <br>Voici le fichier PowerPoint disponible sur moodle pour en savoir plus de détail : <a
+            href="https://moodle.iut-tlse3.fr/pluginfile.php/741062/mod_resource/content/2/R%C3%A8gles_passage_BUT_24-25_Complet_BUT1.pptx">fichier
+            PowerPoint</a>
+        </p>
+        <p>Vous pouvez retrouver le fichier Excel sur moodle pour calculer la totalité de vos notes : <a
+            href="https://moodle.iut-tlse3.fr/pluginfile.php/741062/mod_resource/intro/Calcul_Notes_BUT_Info_etu_24-25.xlsx">fichier
+            Excel</a></p>
+      </div>
 
-<!-- Partie droite : tableau des coefficients -->
-    <div class="tableau-droite">
-      <table>
-        <thead>
-          <tr>
-            <th>Ressources</th>
-            <th>Compétence 1</th>
-            <th>Compétence 2</th>
-            <th>Compétence 3</th>
-            <th>Compétence 4</th>
-            <th>Compétence 5</th>
-            <th>Compétence 6</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr><td>R1.01</td><td>42%</td><td>24%</td><td></td><td></td><td></td><td></td></tr>
-          <tr><td>R1.02</td><td>12%</td><td></td><td></td><td></td><td>18%</td><td>5%</td></tr>
-          <tr><td>R1.03</td><td></td><td>3%</td><td>21%</td><td></td><td></td><td></td></tr>
-          <tr><td>R1.04</td><td></td><td>3%</td><td>21%</td><td></td><td></td><td></td></tr>
-          <tr><td>R1.05</td><td></td><td></td><td></td><td>36%</td><td></td><td></td></tr>
-          <tr><td>R1.06</td><td></td><td>15%</td><td></td><td>18%</td><td></td><td></td></tr>
-          <tr><td>R1.07</td><td></td><td>15%</td><td></td><td></td><td></td><td></td></tr>
-          <tr><td>R1.08</td><td></td><td></td><td></td><td></td><td>27%</td><td>11%</td></tr>
-          <tr><td>R1.09</td><td></td><td></td><td></td><td>6%</td><td></td><td>11%</td></tr>
-          <tr><td>R1.10</td><td>6%</td><td></td><td>12%</td><td></td><td></td><td>11%</td></tr>
-          <tr><td>R1.11</td><td></td><td></td><td>6%</td><td></td><td>15%</td><td>11%</td></tr>
-          <tr><td>R1.12</td><td></td><td></td><td></td><td></td><td></td><td>11%</td></tr>
-        </tbody>
-      </table>
+      <!-- Partie droite : tableau des coefficients -->
+      <div class="tableau-droite">
+        <table>
+          <thead>
+            <tr>
+              <th>Ressources</th>
+              <th>Compétence 1</th>
+              <th>Compétence 2</th>
+              <th>Compétence 3</th>
+              <th>Compétence 4</th>
+              <th>Compétence 5</th>
+              <th>Compétence 6</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>R1.01</td>
+              <td>42%</td>
+              <td>24%</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>R1.02</td>
+              <td>12%</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>18%</td>
+              <td>5%</td>
+            </tr>
+            <tr>
+              <td>R1.03</td>
+              <td></td>
+              <td>3%</td>
+              <td>21%</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>R1.04</td>
+              <td></td>
+              <td>3%</td>
+              <td>21%</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>R1.05</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>36%</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>R1.06</td>
+              <td></td>
+              <td>15%</td>
+              <td></td>
+              <td>18%</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>R1.07</td>
+              <td></td>
+              <td>15%</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>R1.08</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>27%</td>
+              <td>11%</td>
+            </tr>
+            <tr>
+              <td>R1.09</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>6%</td>
+              <td></td>
+              <td>11%</td>
+            </tr>
+            <tr>
+              <td>R1.10</td>
+              <td>6%</td>
+              <td></td>
+              <td>12%</td>
+              <td></td>
+              <td></td>
+              <td>11%</td>
+            </tr>
+            <tr>
+              <td>R1.11</td>
+              <td></td>
+              <td></td>
+              <td>6%</td>
+              <td></td>
+              <td>15%</td>
+              <td>11%</td>
+            </tr>
+            <tr>
+              <td>R1.12</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>11%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- Décorateur visuel pour séparer les parties -->
+  <!-- Décorateur visuel pour séparer les parties -->
   <hr class="decorateur">
 
-<!-- Section des blocs de compétences -->
+  <!-- Section des blocs de compétences -->
   <section class="blocs-competences">
     <h2>Les 6 compétences du BUT</h2>
 
     <div class="bloc gauche" style="background-color:#F5F5F5;">
-        <a href="comp1.html">
-            <img src="images/comp1.png" alt="Compétence 1">
-        </a>
-        <div class="contenu">
-            <h3>Compétence 1 : Réaliser un développement d'application</h3>
-            <div class="ressources">
-                <div>R1.01 - Initiation au développement</div>
-                <div>R1.02 - Interfaces web</div>
-                <div>R1.10 - Anglais technique</div>
-                <div>S1.01 - Implémentation d'un besoin client</div>
-            </div>
+      <a href="comp1.html">
+        <img src="images/comp1.png" alt="Compétence 1">
+      </a>
+      <div class="contenu">
+        <h3>Compétence 1 : Réaliser un développement d'application</h3>
+        <div class="ressources">
+          <div>R1.01 - Initiation au développement</div>
+          <div>R1.02 - Interfaces web</div>
+          <div>R1.10 - Anglais technique</div>
+          <div>S1.01 - Implémentation d'un besoin client</div>
         </div>
+      </div>
     </div>
 
     <div class="bloc droite" style="background-color:#F5F5F5;">
-        <a href="comp2.html">
-            <img src="images/comp2.png" alt="Compétence 2">
-        </a>
-        <div class="contenu">
-            <h3>Compétence 2 : Optimiser des applications informatiques</h3>
-            <div class="ressources">
-                <div>R1.01 - Initiation au développement</div>
-                <div>R1.03 - Introduction à l'architecture des ordinateurs</div>
-                <div>R1.04 - Introduction aux systèmes d'exploitation et à leur fonctionnement</div>
-                <div>R1.06 - Mathématiques discrètes</div>
-                <div>R1.07 - Outils mathématiques fondamentaux</div>
-                <div>S1.02 - Comparaison d'approches algorithmiques</div>
-            </div>
+      <a href="comp2.html">
+        <img src="images/comp2.png" alt="Compétence 2">
+      </a>
+      <div class="contenu">
+        <h3>Compétence 2 : Optimiser des applications informatiques</h3>
+        <div class="ressources">
+          <div>R1.01 - Initiation au développement</div>
+          <div>R1.03 - Introduction à l'architecture des ordinateurs</div>
+          <div>R1.04 - Introduction aux systèmes d'exploitation et à leur fonctionnement</div>
+          <div>R1.06 - Mathématiques discrètes</div>
+          <div>R1.07 - Outils mathématiques fondamentaux</div>
+          <div>S1.02 - Comparaison d'approches algorithmiques</div>
         </div>
+      </div>
     </div>
 
     <div class="bloc gauche" style="background-color:#F5F5F5;">
-        <a href="comp3.html">
-            <img src="images/comp3.png" alt="Compétence 3">
-        </a>
-        <div class="contenu">
-            <h3>Compétence 3 : Administrer des systèmes informatiques communicants complexes</h3>
-            <div class="ressources">
-                <div>R1.03 - Introduction à l'architecture des ordinateurs</div>
-                <div>R1.04 - Introduction aux systèmes d'exploitation et à leur fonctionnement</div>
-                <div>R1.10 - Anglais technique</div>
-                <div>R1.11 - Base de la communication</div>
-                <div>S1.03 - Installation d'un poste pour le développement</div>
-            </div>
+      <a href="comp3.html">
+        <img src="images/comp3.png" alt="Compétence 3">
+      </a>
+      <div class="contenu">
+        <h3>Compétence 3 : Administrer des systèmes informatiques communicants complexes</h3>
+        <div class="ressources">
+          <div>R1.03 - Introduction à l'architecture des ordinateurs</div>
+          <div>R1.04 - Introduction aux systèmes d'exploitation et à leur fonctionnement</div>
+          <div>R1.10 - Anglais technique</div>
+          <div>R1.11 - Base de la communication</div>
+          <div>S1.03 - Installation d'un poste pour le développement</div>
         </div>
+      </div>
     </div>
 
     <div class="bloc droite" style="background-color:#F5F5F5;">
-        <a href="comp4.html">
-            <img src="images/comp4.png" alt="Compétence 4">
-        </a>
-        <div class="contenu">
-            <h3>Compétence 4 : Gérer des données de l'information</h3>
-            <div class="ressources">
-                <div>R1.05 - Introduction aux bases de données et SQL</div>
-                <div>R1.06 - Mathématiques discrètes</div>
-                <div>R1.09 - Économie durable et numérique</div>
-                <div>S1.04 - Création d'une base de données</div>
-            </div>
+      <a href="comp4.html">
+        <img src="images/comp4.png" alt="Compétence 4">
+      </a>
+      <div class="contenu">
+        <h3>Compétence 4 : Gérer des données de l'information</h3>
+        <div class="ressources">
+          <div>R1.05 - Introduction aux bases de données et SQL</div>
+          <div>R1.06 - Mathématiques discrètes</div>
+          <div>R1.09 - Économie durable et numérique</div>
+          <div>S1.04 - Création d'une base de données</div>
         </div>
+      </div>
     </div>
 
     <div class="bloc gauche" style="background-color:#F5F5F5;">
-        <a href="comp5.html">
-            <img src="images/comp5.png" alt="Compétence 5">
-        </a>
-        <div class="contenu">
-            <h3>Compétence 5 : Conduire un projet</h3>
-            <div class="ressources">
-                <div>R1.02 - Développement d'interfaces web</div>
-                <div>R1.08 - Gestion de projet et des organisations</div>
-                <div>R1.11 - Base de la communication</div>
-                <div>S1.05 - Recueil de besoins</div>
-            </div>
+      <a href="comp5.html">
+        <img src="images/comp5.png" alt="Compétence 5">
+      </a>
+      <div class="contenu">
+        <h3>Compétence 5 : Conduire un projet</h3>
+        <div class="ressources">
+          <div>R1.02 - Développement d'interfaces web</div>
+          <div>R1.08 - Gestion de projet et des organisations</div>
+          <div>R1.11 - Base de la communication</div>
+          <div>S1.05 - Recueil de besoins</div>
         </div>
+      </div>
     </div>
 
     <div class="bloc droite" style="background-color:#F5F5F5;">
-        <a href="comp6.html">
-            <img src="images/comp6.png" alt="Compétence 6">
-        </a>
-        <div class="contenu">
-            <h3>Compétence 6 : Travailler dans une équipe informatique</h3>
-            <div class="ressources">
-                <div>R1.02 - Développement d'interfaces web</div>
-                <div>R1.08 - Gestion de projet et organisations</div>
-                <div>R1.09 - Économie durable et numérique</div>
-                <div>R1.10 - Anglais technique</div>
-                <div>R1.11 - Base de la communication</div>
-                <div>S1.06 - Découverte de l'environnement économique et écologique</div>
-            </div>
+      <a href="comp6.html">
+        <img src="images/comp6.png" alt="Compétence 6">
+      </a>
+      <div class="contenu">
+        <h3>Compétence 6 : Travailler dans une équipe informatique</h3>
+        <div class="ressources">
+          <div>R1.02 - Développement d'interfaces web</div>
+          <div>R1.08 - Gestion de projet et organisations</div>
+          <div>R1.09 - Économie durable et numérique</div>
+          <div>R1.10 - Anglais technique</div>
+          <div>R1.11 - Base de la communication</div>
+          <div>S1.06 - Découverte de l'environnement économique et écologique</div>
         </div>
+      </div>
     </div>
 
   </section>
 
+  <footer>
+    <div class="mw">
+      <div class="container">
+        <div class="navigation">
+          <div>
+            <h3>Général :</h3>
+            <nav>
+              <ul>
+                <li><a href="/">Accueil</a></li>
+                <li><a href="/presentation.html">Présentation du BUT</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div>
+            <h3>Compétences :</h3>
+            <nav>
+              <ul>
+                <li><a href="/comp1.html"><em>Réaliser un développement d'application</em></a></li>
+                <li><a href="/comp2.html"><em>Optimiser des applications</em></a></li>
+                <li><a href="/comp3.html"><em>Administrer des systèmes informatiques communicants
+                      complexes</em></a></li>
+                <li><a href="/comp4.html"><em>Gérer des données de l'information</em></a></li>
+                <li><a href="/comp5.html"><em>Conduire un projet</em></a></li>
+                <li><a href="/comp6.html"><em>Collaborer au sein d'une équipe informatique</em></a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+        <span>
+          <a href="https://www.cnil.fr/fr/reglement-europeen-protection-donnees">
+            CNIL - RGPD
+          </a>
+        </span>
+
+        <span>
+          &copy; 2025 Equipe 5 : <br>
+          Chady BOUZIDA, Nadal RASOANAIVO, Axel TEULAT, Hugo VU
+        </span>
+      </div>
+    </div>
+  </footer>
+
 </body>
+
 </html>

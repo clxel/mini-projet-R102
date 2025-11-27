@@ -7,8 +7,12 @@
     text-decoration: none;
 }
 
+body {
+    background-color: white;
+}
+
 a {
-    color: red;
+    color: #C00000;
     transition: all linear 100ms;
 }
 
@@ -29,6 +33,7 @@ main {
 header {
     padding: 1.5rem 0;
     border-bottom: 1px solid black;
+    background-color: white;
 }
 
 .img-container {
@@ -63,7 +68,7 @@ header nav li {
 .li-competences {
     position: relative;
     cursor: pointer;
-    color: red;
+    color: #C00000;
 }
 
 header nav ul ul {
