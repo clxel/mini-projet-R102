@@ -1,0 +1,62 @@
+img {
+    max-width: 12rem;
+}
+
+main .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.decorateur {
+    width: 100%;
+    height: 1px;
+    background-color: black;
+}
+
+.p-espace {
+    margin-top: 0.5rem;
+}
+
+#photo-iut {
+    transition: all linear 100ms;
+}
+
+#photo-iut:hover {
+    transform: scale(1.1);
+}
+
+section>ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+section>ul>li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    border: 2px solid black;
+}
+
+@media (max-width: 1000px) {
+    main .container {
+        gap: 6rem;
+    }
+
+    section {
+        flex-direction: column;
+    }
+
+    section>ul>li {
+        flex-direction: column;
+    }
+}
