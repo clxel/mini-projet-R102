@@ -11,6 +11,12 @@ main .container {
 
 section {
     display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.content {
+    display: flex;
     align-items: center;
     gap: 1rem;
 }
@@ -33,13 +39,13 @@ section {
     transform: scale(1.1);
 }
 
-section>ul {
+.content>ul {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
 }
 
-section>ul>li {
+.content>ul>li {
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -52,11 +58,11 @@ section>ul>li {
         gap: 6rem;
     }
 
-    section {
+    .content {
         flex-direction: column;
     }
 
-    section>ul>li {
+    .content>ul>li {
         flex-direction: column;
     }
 }
